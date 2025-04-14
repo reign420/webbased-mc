@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useRef } from 'react'
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
-import { Physics, useBox, useCapsuleCollider } from '@react-three/cannon'
+import { Physics, useBox, useCylinder } from '@react-three/cannon'
 import { OrbitControls, useGLTF, useTexture } from '@react-three/drei'
 import { supabase } from '../utils/supabaseClient'
 import Chunk from './Chunk'
@@ -119,7 +119,7 @@ export default function World() {
 
 function Player({ position, onPositionUpdate, selectedBlock }) {
   const { camera } = useThree()
-  const [ref, api] = useCapsuleCollider({
+  const [ref, api] = useCylinder({
     mass: 1,
     args: [0.5, 1.8],
     position: position,
