@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/cannon": "^6.6.0",
+    "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "@supabase/supabase-js": "^2.49.4",
     "drei": "^2.2.21",
+    "noisejs": "^2.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.175.0",

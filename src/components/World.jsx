@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useRef } from 'react'
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
 import { Physics, useBox, useCapsuleCollider } from '@react-three/cannon'
 import { OrbitControls, useGLTF, useTexture } from '@react-three/drei'
-import { supabase } from './supabaseClient'
+import { supabase } from '../utils/supabaseClient'
 import Chunk from './Chunk'
 import Inventory from './Inventory'
 

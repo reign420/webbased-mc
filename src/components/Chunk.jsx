@@ -16,7 +16,7 @@ const Chunk = memo(({ position, seed, blocks = [], onBlockUpdate }) => {
         for(let z = 0; z < CHUNK_SIZE; z++) {
           const wx = cx + x
           const wz = cz + z
-          const height = Math.floor(noise.simplex2(wx/50, wz/50) * 10 + 50
+          const height = Math.floor(noise.simplex2(wx/50, wz/50) * 10) + 50
 
           for(let y = 0; y < height; y++) {
             const type = y === height - 1 ? 'grass' : 
